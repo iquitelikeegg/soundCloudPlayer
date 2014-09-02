@@ -25,13 +25,13 @@ Firstly, place a div with an id of 'sc-player-controls' where you want the playe
 The player.js file attaches the soundCloudPlayer object as a property of the window object. so to initialise the player use:
 
 <code>
-window.soundCloudPlayer.init(<br />
-    'sc-player-controls', // The id of the element that the player will use.<br />
-    SC, // The SoundCloud Javascript SDK<br />
-    {<br />
-	userUrl : 'XXXX', // The public url of the targetted user.<br />
-	libraryPath: 'XXXX/' //The path to the directory where the library folder is stored, leave a trailing slash.<br />
-    } <br />
+window.soundCloudPlayer.init(\n
+    'sc-player-controls', // The id of the element that the player will use.\n
+    SC, // The SoundCloud Javascript SDK\n
+    {\n
+	userUrl : 'XXXX', // The public url of the targetted user.\n
+	libraryPath: 'XXXX/' //The path to the directory where the library folder is stored, leave a trailing slash.\n
+    }\n
 );
 </code>
 
