@@ -1,0 +1,135 @@
+#sc-player-controls {
+    position: relative;
+    background-color: transparent;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 10px;
+    z-index: 9999;
+    text-align: center;
+}
+
+@media (min-width: 1100px) {
+    #sc-player-controls {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 240px;
+    }
+}
+
+#sc-player-controls .control:hover,
+#sc-player-controls .control:focus {
+    cursor: pointer;
+}
+
+#sc-player-controls .rewind,
+#sc-player-controls .play,
+#sc-player-controls .fastforward {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    margin: 15px 0;
+    margin-right: 5px;
+    border: 3px white solid;
+    border-radius: 30px;
+    position: relative;
+}
+
+#sc-player-controls .fastforward {
+    margin-right: 15px;
+}
+
+#sc-player-controls .play {
+    width: 30px;
+    height: 30px;
+    margin: 9px 0;
+    margin-right: 5px;
+}
+
+#sc-player-controls > div > .legend {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+#sc-player-controls .play > .legend {
+    border: 8px transparent solid;
+    border-right: 0;
+    border-left: 15px white solid;
+    top: 6.5px;
+    left: 9px;
+
+    transition: all 200ms ease;
+}
+
+#sc-player-controls.playing .play > .legend {
+    border: 0;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+    height: 15px;
+    width: 5px;
+    left: 7.5px;
+}
+
+#sc-player-controls .rewind > .legend:first-child,
+#sc-player-controls .fastforward > .legend:first-child {
+    top: 5px;
+    left: 4px;
+}
+#sc-player-controls .rewind > .legend:last-child,
+#sc-player-controls .fastforward > .legend:last-child {
+    top: 5px;
+    left: 10px;
+}
+
+#sc-player-controls .rewind > .legend {
+    border: 5px transparent solid;
+    border-left: 0;
+    border-right: 6px white solid;
+}
+
+#sc-player-controls .fastforward > .legend {
+    border: 5px transparent solid;
+    border-right: 0;
+    border-left: 6px white solid;
+}
+
+#sc-player-controls .player {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    padding: 10px 0;
+    position: relative;
+    text-align: left;
+}
+
+#sc-player-controls .player > .song-name {
+    width: 100%;
+    position: absolute;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+#sc-player-controls .player > .progress-bar {
+    width: 99%;
+    height: 2px;
+    border: 1px white solid;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, 0.3);
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+#sc-player-controls .player > .progress-bar > .indicator {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 10px;
+    top: -4px;
+    left: 0%;
+    transition: all 200ms ease;
+}
