@@ -6,17 +6,17 @@ You'll need to include the soundcloud javascript API for this repo to function!
 
 Include this line before you initialise the player.
 
-<code>
+<pre>
 &lt;script src="https://connect.soundcloud.com/sdk.js" type="text/javascript"&gt;&lt;/script&gt; 
-</code>
+</pre>
 
 You will also need to initialise the soundcloud SDK and pass it to player as a parameter:
 
-<code>
+<pre>
 SC.initialize({
     client_id : 'XXXXXXXXXXXX'
 });
-</code>
+</pre>
 
 === initialising the player ===
 
